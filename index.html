@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Agenda Profissional | Letícia Alves</title>
+
+    <!-- iOS / Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#b76e79">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Agenda Profissional</h1>
+    <p>Letícia Alves • Dança & Coreografia</p>
+</header>
+
+<main>
+
+<section class="form-agenda">
+    <h2>Nova Atividade</h2>
+
+    <input type="text" id="titulo" placeholder="Título da atividade">
+
+    <select id="tipo">
+        <option value="Aula">Aula</option>
+        <option value="Ensaio">Ensaio</option>
+        <option value="Coreografia">Coreografia</option>
+        <option value="Evento">Evento</option>
+    </select>
+
+    <input type="date" id="data">
+    <input type="time" id="hora">
+
+    <button onclick="adicionar()">Adicionar</button>
+</section>
+
+<section class="lista">
+    <h2>Minha Agenda</h2>
+    <ul id="atividades"></ul>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
